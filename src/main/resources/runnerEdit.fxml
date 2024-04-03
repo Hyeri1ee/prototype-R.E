@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.sponsorrun.controllers.RunnerEditController">
+    <children>
+        <TextField id="name" fx:id="name" layoutX="122.0" layoutY="99.0" prefHeight="42.0" prefWidth="350.0" promptText="NAME" />
+        <TextField id="event" fx:id="event" layoutX="122.0" layoutY="161.0" prefHeight="42.0" prefWidth="350.0" promptText="EVENT" />
+        <TextField id="email" fx:id="email" layoutX="124.0" layoutY="226.0" prefHeight="42.0" prefWidth="350.0" promptText="EMAIL" />
+        <Button layoutX="258.0" layoutY="296.0" mnemonicParsing="false" onAction="#onConfirmClick" prefHeight="36.0" prefWidth="71.0" style="-fx-background-color: #3A3A3A;" text="Confirm" textFill="WHITE" />
+        <Label layoutX="151.0" layoutY="28.0" prefHeight="51.0" prefWidth="245.0" text="                 Edit Runner">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

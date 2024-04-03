@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="425.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.sponsorrun.controllers.OverviewScreenController">
+   <children>
+      <Button layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#onButtonCancelClick" onZoomFinished="#onButtonOkClick" text="Cancel" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Button layoutX="531.0" layoutY="386.0" mnemonicParsing="false" onAction="#onButtonOkClick" text="OK" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="70.0" />
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <top>
+            <Label fx:id="label1" text="Label" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <TableView fx:id="table1" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

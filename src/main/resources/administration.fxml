@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<!--<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="nl.saxion.re.sponsorrun.controllers.AdministrationController
+">-->
+<!--    <padding>-->
+<!--        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />-->
+<!--    </padding>-->
+<!--    <Label fx:id="welcomeText" text="Main menu" />-->
+<!--    <Button onAction="#onFirstButtonClick" text="First button" />-->
+<!--   <Button mnemonicParsing="false" onAction="#onSecondButtonClick" text="Second button" />-->
+<!--</VBox>-->
+
+<AnchorPane id="adminAnchorPane" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.saxion.re.sponsorrun.controllers.AdministrationController">
+    <children>
+        <Label layoutX="-4.0" prefHeight="62.0" prefWidth="1219.0" style="-fx-background-color: #3A3A3A;" text="        Adminstration Overview" textFill="WHITE" AnchorPane.leftAnchor="-4.0" AnchorPane.topAnchor="0.0">
+            <font>
+                <Font size="27.0" />
+            </font></Label>
+      <Button layoutX="441.0" layoutY="148.0" mnemonicParsing="false" onAction="#onCreate" prefHeight="30.0" prefWidth="144.0" style="-fx-background-color: #3A3A3A;" text="Create" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <TextField id="searchField" fx:id="searchField" layoutX="615.0" layoutY="151.0" prefHeight="30.0" prefWidth="152.0" />
+      <Label id="searchLabel" fx:id="searchLabel" layoutX="620.0" layoutY="151.0" mouseTransparent="true" prefHeight="30.0" prefWidth="144.0" text="     Search events" textAlignment="CENTER" textFill="#3a3a3a">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+
+
+        <Line endX="855.800048828125" endY="123.89999389648438" layoutX="216.0" layoutY="77.0" startX="-114.19999694824219" startY="123.89999389648438" stroke="#bcbcbc" />
+        <Pagination id="pagination" fx:id="pagination" layoutX="409.0" layoutY="609.0" maxPageIndicatorCount="30" pageCount="30" prefHeight="74.0" prefWidth="359.0" />
+      <TableView id="table" fx:id="table" fixedCellSize="38.0" layoutX="169.0" layoutY="220.0" prefHeight="381.0" prefWidth="860.0">
+        <columns>
+          <TableColumn id="name" fx:id="name" editable="false" prefWidth="191.00003051757812" reorderable="false" resizable="false" sortable="false" text="Name" />
+          <TableColumn id="event" fx:id="event" editable="false" prefWidth="173.00003051757812" reorderable="false" resizable="false" sortable="false" text="Event" />
+            <TableColumn id="email" fx:id="email" editable="false" prefWidth="496.60003662109375" reorderable="false" resizable="false" sortable="false" text="Email" />
+        </columns>
+      </TableView>
+      <Button id="editButton" fx:id="editButton" layoutX="788.0" layoutY="518.0" mnemonicParsing="false" onAction="#onClickEdit" prefHeight="26.0" prefWidth="35.0" text="E" visible="false" />
+      <Button layoutX="347.0" layoutY="88.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="123.0" style="-fx-background-color: #3A3A3A;" text="Runners" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button layoutX="524.0" layoutY="88.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="123.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #3A3A3A; -fx-border-radius: 3;" text="Sponsors" textFill="#3a3a3a">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button layoutX="717.0" layoutY="88.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="123.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #3A3A3A; -fx-border-radius: 3;" text="Events" textFill="#3a3a3a">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Group layoutX="1053.0" layoutY="16.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3a3a3a" height="42.0" layoutX="33.0" layoutY="-6.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="28.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3a3a3a" height="25.0" layoutX="53.0" layoutY="17.0" stroke="#3a3a3a" strokeType="INSIDE" width="17.0" />
+            <Text fill="WHITE" layoutX="55.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="V" wrappingWidth="87.99999856948853" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3a3a3a" height="36.0" layoutX="25.0" layoutY="-17.0" stroke="#3a3a3a" strokeType="INSIDE" width="17.0" />
+            <Group layoutX="96.0" layoutY="-7.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3a3a3a" height="22.0" layoutX="21.0" layoutY="10.0" stroke="#3a3a3a" strokeType="INSIDE" width="28.0" />
+                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3a3a3a" height="42.0" layoutX="-3.0" stroke="#f2f2f2" strokeType="INSIDE" strokeWidth="2.0" width="35.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="14.0" layoutX="14.0" layoutY="14.0" stroke="#3a3a3a" strokeType="INSIDE" width="28.0" />
+                  <Line endX="100.0" layoutX="-69.0" layoutY="9.0" startX="109.20001220703125" startY="8.200000762939453" stroke="WHITE" strokeWidth="6.0" />
+                  <Line endX="451.199951171875" endY="19.199996948242188" layoutX="-420.0" layoutY="13.0" startX="463.20001220703125" startY="6.199999809265137" stroke="WHITE" strokeWidth="6.0" />
+               </children>
+            </Group>
+         </children>
+      </Group>
+    </children>
+</AnchorPane>
